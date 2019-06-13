@@ -1,2 +1,2 @@
 # scales-generator
-Musica Scales Generator
+Musical Scales Generator
