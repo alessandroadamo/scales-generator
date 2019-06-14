@@ -22,6 +22,19 @@
   \transpose c __LILY_PITCH__
   \new Staff \relative __RELATIVE_PITCH__ {
     \key c \minor
+    \CMinorHarmonicHarmonization
+    \bar "||"
+  }
+  \header{
+    piece = \markup { __TITLE_PITCH__ " Harmonic Minor Scale Harmonization" }
+  }
+}
+
+
+\score {
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
+    \key c \minor
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)

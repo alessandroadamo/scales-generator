@@ -22,6 +22,18 @@
   \transpose c e
   \new Staff \relative c' {
     \key c \major
+    \CMajorHarmonization
+    \bar "||"
+  }
+  \header{
+    piece = \markup { "E" " Major Scale Harmonization" }
+  }
+}
+
+\score {
+  \transpose c e
+  \new Staff \relative c' {
+    \key c \major
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)

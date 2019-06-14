@@ -22,6 +22,18 @@
   \transpose c b
   \new Staff \relative c {
     \key c \minor
+    \CMinorMelodicHarmonization
+    \bar "||"
+  }
+  \header{
+    piece = \markup { "B" " Melodic Minor Scale Harmonization" }
+  }
+}
+
+\score {
+  \transpose c b
+  \new Staff \relative c {
+    \key c \minor
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)

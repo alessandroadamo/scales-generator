@@ -22,6 +22,19 @@
   \transpose c a
   \new Staff \relative c {
     \key c \minor
+    \CMinorHarmonicHarmonization
+    \bar "||"
+  }
+  \header{
+    piece = \markup { "A" " Harmonic Minor Scale Harmonization" }
+  }
+}
+
+
+\score {
+  \transpose c a
+  \new Staff \relative c {
+    \key c \minor
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)

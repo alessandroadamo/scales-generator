@@ -22,6 +22,19 @@
   \transpose c ges
   \new Staff \relative c {
     \key c \minor
+    \CMinorHarmonicHarmonization
+    \bar "||"
+  }
+  \header{
+    piece = \markup { "G" \flat " Harmonic Minor Scale Harmonization" }
+  }
+}
+
+
+\score {
+  \transpose c ges
+  \new Staff \relative c {
+    \key c \minor
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)

@@ -3,42 +3,27 @@
 \include "scales.ly"
 
 \header{
-  title = \markup { "B" " Harmonic Minor Scale" }
+  title = \markup { __TITLE_PITCH__ " Whole Tone Scale" }
 }
 
 \score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
-    \CMinorHarmonicScale
+  \transpose c __LILY_PITCH__    
+  \new Staff \relative __RELATIVE_PITCH__ {
+    \CWholeToneScale
     \bar "||"
   }
   \header{
-    piece = \markup { "B" " Harmonic Minor Scale" }
+    piece = \markup { __TITLE_PITCH__ " Whole Tone Scale" }
   }
 }
 
 \score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
-    \CMinorHarmonicHarmonization
-    \bar "||"
-  }
-  \header{
-    piece = \markup { "B" " Harmonic Minor Scale Harmonization" }
-  }
-}
-
-
-\score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorHarmonicScaleThirds
+    \CWholeToneScaleThirds
     \bar "||"
   }
   \header{
@@ -47,13 +32,12 @@
 }
 
 \score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorHarmonicScaleFourths
+    \CWholeToneScaleFourths
     \bar "||"
   }
   \header{
@@ -62,13 +46,12 @@
 }
 
 \score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorHarmonicScaleFifths
+    \CWholeToneScaleFifths
     \bar "||"
   }
   \header{
@@ -77,13 +60,12 @@
 }
 
 \score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorHarmonicScaleSixths
+    \CWholeToneScaleSixths
     \bar "||"
   }
   \header{
@@ -92,13 +74,12 @@
 }
 
 \score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorHarmonicScaleSevenths
+    \CWholeToneScaleSevenths
     \bar "||"
   }
   \header{
@@ -107,13 +88,12 @@
 }
 
 \score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorHarmonicScaleEights
+    \CWholeToneScaleEights
     \bar "||"
   }
   \header{
@@ -122,10 +102,9 @@
 }
 
 \score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
-    \CMinorHarmonicScaleTriads
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
+    \CWholeToneScaleTriads
     \bar "||"
   }
   \header{
@@ -134,10 +113,10 @@
 }
 
 \score {
-  \transpose c b
-  \new Staff \relative c {
-    \key c \minor
-    \CMinorHarmonicScaleChords
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
+    \key __RELATIVE_PITCH__ \major
+    \CWholeToneScaleChords
     \bar "||"
   }
   \header{
