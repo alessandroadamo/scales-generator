@@ -8,7 +8,7 @@
   tagline = ##f
 }
 
-\tocItem \markup { __TITLE_PITCH__ "  Harmonic Minor Scale" }
+\tocItem \markup { __TITLE_PITCH__ " Harmonic Minor Scale" }
 
 \score {
   \transpose c __LILY_PITCH__

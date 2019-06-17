@@ -3,45 +3,45 @@
 \include "scales.ly"
 
 \header{
-  title = \markup { __TITLE_PITCH__ " Melodic Minor Scale" }
+  title = \markup { __TITLE_PITCH__ " Diminished Scale" }
   subtitle = \markup { "Etude" }
   tagline = ##f
 }
 
-\tocItem \markup { __TITLE_PITCH__ " Melodic Minor Scale" }
+\tocItem \markup { __TITLE_PITCH__ " Diminished Scale" }
 
 \score {
   \transpose c __LILY_PITCH__
   \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
-    \CMinorMelodicScale
+    \key c \major
+    \CDiminishedScale
     \bar "||"
   }
   \header{
-    piece = \markup { __TITLE_PITCH__ " Melodic Minor Scale" }
+    piece = \markup { __TITLE_PITCH__ " Diminished Scale" }
   }
 }
 
 \score {
   \transpose c __LILY_PITCH__
   \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
-    \CMinorMelodicHarmonization
+    \key c \major
+    \CDiminishedHarmonization
     \bar "||"
   }
   \header{
-    piece = \markup { __TITLE_PITCH__ " Melodic Minor Scale Harmonization" }
+    piece = \markup { __TITLE_PITCH__ " Diminished Scale Harmonization" }
   }
 }
 
 \score {
   \transpose c __LILY_PITCH__
   \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
+    \key c \major
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorMelodicScaleThirds
+    \CDiminishedScaleThirds
     \bar "||"
   }
   \header{
@@ -52,11 +52,11 @@
 \score {
   \transpose c __LILY_PITCH__
   \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
+    \key c \major
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorMelodicScaleFourths
+    \CDiminishedScaleFourths
     \bar "||"
   }
   \header{
@@ -67,11 +67,11 @@
 \score {
   \transpose c __LILY_PITCH__
   \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
+    \key c \major
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorMelodicScaleFifths
+    \CDiminishedScaleFifths
     \bar "||"
   }
   \header{
@@ -82,11 +82,11 @@
 \score {
   \transpose c __LILY_PITCH__
   \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
+    \key c \major
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorMelodicScaleSixths
+    \CDiminishedScaleSixths
     \bar "||"
   }
   \header{
@@ -97,11 +97,11 @@
 \score {
   \transpose c __LILY_PITCH__
   \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
+    \key c \major
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorMelodicScaleSevenths
+    \CDiminishedScaleSevenths
     \bar "||"
   }
   \header{
@@ -112,11 +112,11 @@
 \score {
   \transpose c __LILY_PITCH__
   \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
+    \key c \major
     \set Timing.beamExceptions = #'()
     \set Timing.baseMoment = #'(ly:make-moment 1/4)
     \set Timing.beatStructure = #'(1 1 1 1)
-    \CMinorMelodicScaleEights
+    \CDiminishedScaleEights
     \bar "||"
   }
   \header{
@@ -124,28 +124,5 @@
   }
 }
 
-\score {
-  \transpose c __LILY_PITCH__
-  \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
-    \CMinorMelodicScaleTriads
-    \bar "||"
-  }
-  \header{
-    piece = \markup { "Scale in Triads" }
-  }
-}
-
-\score {
-  \transpose c __LILY_PITCH__
-  \new Staff \relative __RELATIVE_PITCH__ {
-    \key c \minor
-    \CMinorMelodicScaleChords
-    \bar "||"
-  }
-  \header{
-    piece = \markup { "Scale in Diatonic 7th Chords" }
-  }
-}
 
 \pageBreak
