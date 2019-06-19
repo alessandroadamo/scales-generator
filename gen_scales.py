@@ -143,7 +143,7 @@ with open('book.lytex', "w") as lytex:
 #\end{document})
 
 os.chdir("..")
-"""
+
 ###############################
 ######## Major Scale ##########
 ################# ##############
@@ -227,7 +227,6 @@ with open("template_minor_harmonic.ly", "r") as tmp:
         lytex.write("\n\n")
 
     os.chdir("..")
-"""
 
 #######################################
 ######## Diminished Scale ##########
@@ -247,7 +246,7 @@ with open("template_diminished.ly", "r") as tmp:
             out.write(app)
 
     with open('book.lytex', "a+") as lytex:
-        lytex.write("\\chapter{Diminished Scales}\n")
+        lytex.write("\\chapter*{Diminished Scales}\n")
         for key in diminisheds.keys():
             lytex.write("\\section*{" + diminisheds[key]["__LATEX_PITCH__"] + " Diminished Scale}\n")
             lytex.write("\\addcontentsline{toc}{section}{" + diminisheds[key]["__LATEX_PITCH__"] + " Diminished Scale}\n")
@@ -265,9 +264,22 @@ os.chdir("..")
 
 os.chdir(os.getcwd() + os.sep + "output")
 proc = subprocess.Popen([ "lilypond-book book.lytex"], shell=True)
-time.sleep(5)
+proc.wait()
+
+proc = subprocess.Popen([ "makeindex book.tex"], shell=True)
 proc.wait()
 
 proc = subprocess.Popen([ "latex book.tex"], shell=True)
-time.sleep(5)
+proc.wait()
+
+proc = subprocess.Popen([ "makeindex book.tex"], shell=True)
+proc.wait()
+
+proc = subprocess.Popen([ "latex book.tex"], shell=True)
+proc.wait()
+
+proc = subprocess.Popen([ "dvips book.dvi"], shell=True)
+proc.wait()
+
+proc = subprocess.Popen([ "ps2pdf book.ps"], shell=True)
 proc.wait()

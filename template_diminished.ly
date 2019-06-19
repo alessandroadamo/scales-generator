@@ -2,13 +2,13 @@
 
 \include "scales.ly"
 
+%{
 \header{
   title = \markup { __TITLE_PITCH__ " Diminished Scale" }
   subtitle = \markup { "Etude" }
   tagline = ##f
 }
-
-\tocItem \markup { __TITLE_PITCH__ " Diminished Scale" }
+%}
 
 \score {
   \transpose c __LILY_PITCH__
@@ -124,5 +124,26 @@
   }
 }
 
+\score {
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
+    \key c \major
+    \CDiminishedScaleTriads
+    \bar "||"
+  }
+  \header{
+    piece = \markup { "Scale in Triads" }
+  }
+}
 
-\pageBreak
+\score {
+  \transpose c __LILY_PITCH__
+  \new Staff \relative __RELATIVE_PITCH__ {
+    \key c \major
+    \CDiminishedScaleChords
+    \bar "||"
+  }
+  \header{
+    piece = \markup { "Scale in Diatonic 7th Chords" }
+  }
+}

@@ -2,13 +2,13 @@
 
 \include "scales.ly"
 
+%{
 \header{
   title = \markup { __TITLE_PITCH__ " Melodic Minor Scale" }
   subtitle = \markup { "Etude" }
   tagline = ##f
 }
-
-\tocItem \markup { __TITLE_PITCH__ " Melodic Minor Scale" }
+%}
 
 \score {
   \transpose c __LILY_PITCH__
@@ -147,5 +147,3 @@
     piece = \markup { "Scale in Diatonic 7th Chords" }
   }
 }
-
-\pageBreak

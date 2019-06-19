@@ -1,4 +1,0 @@
-\contentsline {chapter}{\numberline {1}Diminished Scales}{5}
-\contentsline {section}{C Diminished Scale}{5}
-\contentsline {section}{C$\sharp $ Diminished Scale}{8}
-\contentsline {section}{D Diminished Scale}{10}
