@@ -1024,7 +1024,6 @@ CMinorHarmonicScaleChords = {
   Diminished Scale
 %}
 
-
 CDiminishedScale = {
   c d ees f ges aes a b 
   c d ees f ges aes a b 
@@ -1032,17 +1031,16 @@ CDiminishedScale = {
   c b a aes ges f ees d c1
 }
 
-CChords = {   
-      \chordmode { 
-        c1:dim7 d1:dim7 ees1:dim7 f1:dim7 ges1:dim7 aes1:dim7 a1:dim7 b1:dim7
-      }
-      
-  }
+CDiminishedChords = {   
+    \chordmode { 
+      c1:dim7 d1:dim7 ees1:dim7 f1:dim7 ges1:dim7 aes1:dim7 a1:dim7 b1:dim7
+    }
+}
   
 CDiminishedHarmonization = {
    << 
-     \new ChordNames { \CChords }
-     { \CChords }
+     \new ChordNames { \CDiminishedChords }
+     { \CDiminishedChords }
    >>
 }
 
@@ -1357,4 +1355,268 @@ CDiminishedScaleChords = {
   b'8 d8 f8 aes8
   a8 ges8 ees8 c8
 
+}
+
+%{
+  Whole Tone Scale
+%}
+
+CWholeScale = {
+  c d e fis gis ais 
+  c d e fis gis ais 
+  c ais gis fis e d
+  c ais gis fis e d c
+}
+
+CWholeChords = {   
+  \chordmode { 
+    c1:aug d1:aug e1:aug fis1:aug gis1:aug ais1:aug
+  }    
+}
+
+CWholeHarmonization = {
+   << 
+     \new ChordNames { \CWholeChords }
+     { \CWholeChords }
+   >>
+}
+
+CWholeScaleThirds = {
+  c8 e8
+  d8 fis8
+  e8 gis8
+  fis8 ais8
+  gis8 c8
+  ais8 d8
+  c8 e8
+  
+  e8 c8
+  d8 ais8 
+  c8 gis8 
+  ais8 fis8 
+  gis8 e8 
+  fis8 d8 
+  e8 c8
+  
+  c8 e8
+  fis8 d8 
+  e8 gis8
+  ais8 fis8 
+  gis8 c8
+  d8 ais8 
+  c8 e8
+  
+  e8 c8
+  ais8 d8
+  c8 gis8 
+  fis8 ais8
+  gis8 e8 
+  d8 fis8
+  e8 c8 
+}
+
+CWholeScaleFourths = {
+  c8 fis8
+  d8 gis8
+  e8 ais8
+  fis8 c'8
+  gis8 d'8
+  ais8 e'8
+  c8 fis8
+  
+  fis8 c8
+  e8 ais,8 
+  d8 gis,8 
+  c8 fis,8 
+  ais8 e8 
+  gis8 d8 
+  fis8 c8
+  
+  c8 fis8
+  gis8 d8
+  e8 ais8
+  c8 fis,8 
+  gis8 d'8
+  e8 ais,8 
+  c8 fis8
+  
+  fis8 c8
+  ais8 e'8
+  d8 gis,8 
+  fis8 c'8
+  ais8 e8 
+  d8 gis8 
+  fis8 c8
+}
+
+CWholeScaleFifths = {
+  c8 gis'8
+  d8 ais'8
+  e8 c'8
+  fis,8 d'8
+  gis,8 e'8
+  ais,8 fis'8
+  c8 gis'8
+  
+  gis8 c,8
+  fis8 ais,8 
+  e'8 gis,8 
+  d'8 fis,8 
+  c'8 e,8 
+  ais8 d,8 
+  gis8 c,8
+  
+  c8 gis'8
+  ais8 d,8
+  e8 c'8
+  d8 fis,8 
+  gis8 e'8
+  fis8 ais,8 
+  c8 gis'8
+  
+  gis8 c,8
+  ais8 fis'8
+  e8 gis,8 
+  fis8 d'8
+  c8 e,8 
+  d8 ais'8 
+  gis8 c,8
+}
+
+CWholeScaleSixths = {
+  c8 ais'8
+  d,8 c'8
+  e,8 d'8
+  fis,8 e'8
+  gis,8 fis'8
+  ais,8 gis'8
+  c,8 ais'8
+  
+  ais8 c,8
+  gis'8 ais,8 
+  fis'8 gis,8 
+  e'8 fis,8 
+  d'8 e,8 
+  c'8 d,8 
+  ais'8 c,8
+  
+  c8 ais'8
+  c8 d,8
+  e8 d'8
+  e8 fis,8 
+  gis8 fis'8
+  gis8 ais,8 
+  c8 ais'8
+  
+  ais8 c,8
+  ais8 gis'8
+  fis8 gis,8 
+  fis8 e'8
+  d8 e,8 
+  d8 c'8 
+  ais8 c,8 
+}
+
+CWholeScaleSevenths = {
+  c8 c'8
+  d,8 d'8
+  e,8 e'8
+  fis,8 fis'8
+  gis,8 gis'8
+  ais,8 ais'8
+  c,8 c'8
+  
+  c8 c,8
+  ais'8 ais,8
+  gis'8 gis,8
+  fis'8 fis,8
+  e'8 e,8 
+  d'8 d,8
+  c'8 c,8
+  
+  c8 c'8
+  d8 d,8
+  e8 e'8
+  fis8 fis,8
+  gis8 gis'8
+  ais8 ais,8
+  c8 c'8
+  
+  c8 c,8
+  ais8 ais'8
+  gis8 gis,8
+  fis8 fis'8
+  e8 e,8 
+  d8 d'8
+  c8 c,8
+  
+}
+
+CWholeScaleTriads = {
+  \tuplet 3/2 {c8 e8 gis8} 
+  \tuplet 3/2 {d8 fis8 ais8}
+  \tuplet 3/2 {e8 gis8 c8}
+  \tuplet 3/2 {fis,8 ais8 d8}
+  \tuplet 3/2 {gis,8 c8 e8}
+  \tuplet 3/2 {ais,8 d8 fis8}
+  \tuplet 3/2 {c8 e8 gis8} 
+
+  \tuplet 3/2 {gis8 e8 c8} 
+  \tuplet 3/2 {fis8 d8 ais8}
+  \tuplet 3/2 {e'8 c8 gis8}
+  \tuplet 3/2 {d'8 ais8 fis8}
+  \tuplet 3/2 {c'8 gis8 e8}
+  \tuplet 3/2 {ais8 fis8 d8}
+  \tuplet 3/2 {gis8 e8 c8}
+  
+  \tuplet 3/2 {c8 e8 gis8} 
+  \tuplet 3/2 {ais8 fis8 d8}
+  \tuplet 3/2 {e8 gis8 c8}
+  \tuplet 3/2 {d8 ais8 fis8}
+  \tuplet 3/2 {gis8 c8 e8}
+  \tuplet 3/2 {fis8 d8 ais8}
+  \tuplet 3/2 {c8 e8 gis8} 
+
+  \tuplet 3/2 {gis8 e8 c8} 
+  \tuplet 3/2 {ais8 d8 fis8}
+  \tuplet 3/2 {e8 c8 gis8}
+  \tuplet 3/2 {fis8 ais8 d8}
+  \tuplet 3/2 {c8 gis8 e8}
+  \tuplet 3/2 {d8 fis8 ais8}
+  \tuplet 3/2 {gis8 e8 c8}
+  
+}
+
+CWholeScaleChords = {
+  c8 e8 gis8 c8
+  d,8 fis8 ais8 d8
+  e,8 gis8 c8 e8
+  fis,8 ais8 d8 fis
+  gis,8 c8 e8 gis
+  ais,8 d8 fis8 ais
+  c,8 e8 gis8 c8
+
+  c8 gis8 e8 c8
+  ais'8 fis8 d8 ais8
+  gis'8 e8 c8 gis8
+  fis'8 d8 ais8 fis8
+  e'8 c8 gis8 e8
+  d'8 ais8 fis8 d8
+  c'8 gis8 e8 c8
+  
+  c8 e8 gis8 c8
+  d8 ais8 fis8 d8
+  e8 gis8 c8 e8
+  fis8 d8 ais8 fis8
+  gis8 c8 e8 gis8
+  ais8 fis8 d8 ais8
+  c8 e8 gis8 c8
+
+  c8 gis8 e8 c8
+  ais8 d8 fis8 ais8
+  gis8 e8 c8 gis8
+  fis8 ais8 d8 fis8
+  e8 c8 gis8 e8
+  d8 fis8 ais8 d8
+  c8 gis8 e8 c8
 }

@@ -128,6 +128,9 @@ os.chdir(os.getcwd() + os.sep + "output")
 with open('book.lytex', "w") as lytex:
     lytex.write("\\documentclass[12pt,a4paper,twoside,openright,titlepage]{book}\n")
     lytex.write("\\usepackage[utf8]{inputenc}\n")
+    lytex.write("\\usepackage{hyperref}\n")
+    lytex.write("\\usepackage{color}\n")
+    lytex.write("\\hypersetup{\n\tcolorlinks=true,\n\tlinktoc=all,\n\tlinkcolor=blue,}\n")
 
     lytex.write("\\title{Scales Etude}\n")
     lytex.write("\\author{Alessandro Adamo}\n")
@@ -246,11 +249,39 @@ with open("template_diminished.ly", "r") as tmp:
             out.write(app)
 
     with open('book.lytex', "a+") as lytex:
-        lytex.write("\\chapter*{Diminished Scales}\n")
+        lytex.write("\\chapter{Diminished Scales}\n")
         for key in diminisheds.keys():
             lytex.write("\\section*{" + diminisheds[key]["__LATEX_PITCH__"] + " Diminished Scale}\n")
             lytex.write("\\addcontentsline{toc}{section}{" + diminisheds[key]["__LATEX_PITCH__"] + " Diminished Scale}\n")
             lytex.write("\\lilypondfile[quote, noindent]{" + key + "_diminished.ly}\n")
+            lytex.write("\\pagebreak\n")
+        lytex.write("\n\n")
+
+    os.chdir("..")
+
+#######################################
+######## Whole Tone Scale #############
+#######################################
+
+with open("template_whole.ly", "r") as tmp:
+    str = tmp.read()
+
+    os.chdir(os.getcwd() + os.sep + "output")
+
+    for key in wholes.keys():
+        app = str.replace("__TITLE_PITCH__", wholes[key]["__TITLE_PITCH__"]) \
+            .replace("__LILY_PITCH__", wholes[key]["__LILY_PITCH__"]) \
+            .replace("__RELATIVE_PITCH__", wholes[key]["__RELATIVE_PITCH__"])
+        filename = key + "_whole.ly"
+        with open(filename, 'w') as out:
+            out.write(app)
+
+    with open('book.lytex', "a+") as lytex:
+        lytex.write("\\chapter{Whole Tone Scales}\n")
+        for key in wholes.keys():
+            lytex.write("\\section*{" + diminisheds[key]["__LATEX_PITCH__"] + " Whole Tone Scale}\n")
+            lytex.write("\\addcontentsline{toc}{section}{" + diminisheds[key]["__LATEX_PITCH__"] + " Whole Tone Scale}\n")
+            lytex.write("\\lilypondfile[quote, noindent]{" + key + "_whole.ly}\n")
             lytex.write("\\pagebreak\n")
         lytex.write("\n\n")
 
