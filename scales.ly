@@ -339,6 +339,348 @@ CMajorScaleChords = {
 }
 
 %{
+  Dorian Mode
+%}
+
+CDorianScale = {
+  c d ees f g a bes 
+  c d ees f g a bes
+  c bes a g f ees d  
+  c bes a g f ees d c
+}
+
+
+CDorianHarmonization = {
+  <<
+    \new ChordNames {
+      < c, ees g bes >1
+      < d f a c >1
+      < ees g bes d >1 
+      < f a c ees >1
+      < g bes d f >1
+      < a c ees g >1
+      < bes d f a >1
+      < c ees g bes >1
+    }
+    {
+      < c ees g bes >1
+      < d f a c >1
+      < ees g bes d >1 
+      < f a c ees >1
+      < g bes d f >1
+      < a c ees g >1
+      < bes d f a >1
+      < c ees g bes >1
+    }
+  >>
+}
+
+
+CDorianScaleThirds = {
+  c8 ees8
+  d8 f8
+  ees8 g8
+  f8 a8
+  g8 bes8
+  a8 c8
+  bes8 d8
+  c8 ees8
+  
+  ees8 c8
+  d8 bes8 
+  c8 a8 
+  bes8 g8 
+  a8 f8 
+  g8 ees8 
+  f8 d8 
+  ees8 c8 
+
+  c8 ees8
+  f8 d8 
+  ees8 g8
+  a8 f8
+  g8 bes8
+  c8 a8
+  bes8 d8
+  ees8 c8
+  
+  c8 ees8
+  d8 bes8 
+  a8 c8
+  bes8 g8 
+  f8 a8
+  g8 ees8 
+  d8 f8
+  ees8 c8 
+}
+
+CDorianScaleFourths = {
+  c8 f8
+  d8 g8
+  ees8 a8
+  f8 bes8
+  g8 c8
+  a8 d8
+  bes8 ees8
+  c8 f8
+  
+  f8 c8
+  ees8 bes8 
+  d8 a8 
+  c8 g8 
+  bes8 f8 
+  a8 ees8 
+  g8 d8 
+  f8 c8 
+
+  c8 f8
+  g8 d8 
+  ees8 a8
+  bes8 f8
+  g8 c8
+  d8 a8
+  bes8 ees8
+  f8 c8
+  
+  c8 f8
+  ees8 bes8 
+  a8 d8
+  c8 g8 
+  f8 bes8
+  a8 ees8 
+  d8 g8
+  f8 c8 
+}
+
+CDorianScaleFifths = {
+  c8 g'8
+  d8 a'8
+  ees8 bes'8
+  f8 c'8
+  g8 d'8
+  a8 ees'8
+  bes8 f'8
+  c8 g'8
+  
+  g8 c,8
+  f8 bes,8 
+  ees8 a,8 
+  d8 g,8 
+  c8 f,8 
+  bes8 ees,8 
+  a8 d,8 
+  g8 c,8 
+
+  c8 g'8
+  a8 d,8 
+  ees8 bes'8
+  c8 f,8
+  g8 d'8
+  ees8 a,8
+  bes8 f'8
+  g8 c,8
+  
+  c8 g'8
+  f8 bes,8 
+  a8 ees'8
+  d8 g,8 
+  f8 c'8
+  bes8 ees,8 
+  d8 a'8
+  g8 c,8 
+}
+
+CDorianScaleSixths = {
+  c8 a'8
+  d,8 bes'8
+  ees,8 c'8
+  f,8 d'8
+  g,8 ees'8
+  a,8 f'8
+  bes,8 g'8
+  c,8 a'8
+  
+  a8 c,8
+  g'8 bes,8 
+  f'8 a,8 
+  ees'8 g,8 
+  d'8 f,8 
+  c'8 ees,8 
+  bes'8 d,8 
+  a'8 c,8 
+
+  c8 a'8
+  bes8 d,8 
+  ees8 c'8
+  d8 f,8
+  g8 ees'8
+  f8 a,8
+  bes8 g'8
+  a8 c,8
+  
+  c8 a'8
+  g8 bes,8 
+  a8 f'8
+  ees8 g,8 
+  f8 d'8
+  c8 ees,8 
+  d8 bes'8
+  a8 c,8 
+}
+
+CDorianScaleSevenths = {
+  c8 bes'8
+  d,8 c'8
+  ees,8 d'8
+  f,8 ees'8
+  g,8 f'8
+  a,8 g'8
+  bes,8 a'8
+  c,8 bes'8
+  
+  bes8 c,8
+  a'8 bes,8 
+  g'8 a,8 
+  f'8 g,8 
+  ees'8 f,8 
+  d'8 ees,8 
+  c'8 d,8 
+  bes'8 c,8 
+
+  c8 bes'8
+  c8 d,8 
+  ees8 d'8
+  ees8 f,8
+  g8 f'8
+  g8 a,8
+  bes8 a'8
+  bes8 c,8
+  
+  c8 bes'8
+  a8 bes,8 
+  a8 g'8
+  f8 g,8 
+  f8 ees'8
+  d8 ees,8 
+  d8 c'8
+  bes8 c,8 
+}
+
+CDorianScaleEights = {
+  c8 c'8
+  d,8 d'8
+  ees,8 ees'8
+  f,8 f'8
+  g,8 g'8
+  a,8 a'8
+  bes,8 bes'8
+  c,8 c'8
+  
+  c8 c,8
+  bes'8 bes,8 
+  a'8 a,8 
+  g'8 g,8 
+  f'8 f,8 
+  ees'8 ees,8 
+  d'8 d,8 
+  c'8 c,8 
+
+  c8 c'8
+  d8 d,8 
+  ees8 ees'8
+  f8 f,8
+  g8 g'8
+  a8 a,8
+  bes8 bes'8
+  c8 c,8
+  
+  c8 c'8
+  bes8 bes,8 
+  a8 a'8
+  g8 g,8 
+  f8 f'8
+  ees8 ees,8 
+  d8 d'8
+  c8 c,8 
+}
+
+CDorianScaleTriads = {
+  \tuplet 3/2 {c8 ees8 g8} 
+  \tuplet 3/2 {d8 f8 a8}
+  \tuplet 3/2 {ees8 g8 bes8}
+  \tuplet 3/2 {f8 a8 c8}
+  \tuplet 3/2 {g8 bes8 d8}
+  \tuplet 3/2 {a8 c8 ees8}
+  \tuplet 3/2 {bes8 d8 f8}
+  \tuplet 3/2 {c8 ees8 g8}
+  
+  \tuplet 3/2 {g8 ees8 c8}
+  \tuplet 3/2 {f8 d8 bes8}
+  \tuplet 3/2 {ees8 c8 a8}
+  \tuplet 3/2 {d8 bes8 g8}
+  \tuplet 3/2 {c8 a8 f8}
+  \tuplet 3/2 {bes8 g8 ees8}
+  \tuplet 3/2 {a8 f8 d8}
+  \tuplet 3/2 {g8 ees8 c8}
+
+  \tuplet 3/2 {c8 ees8 g8} 
+  \tuplet 3/2 {a8 f8 d8}
+  \tuplet 3/2 {ees8 g8 bes8}
+  \tuplet 3/2 {c8 a8 f8}
+  \tuplet 3/2 {g8 bes8 d8}
+  \tuplet 3/2 {ees8 c8 a8}
+  \tuplet 3/2 {bes8 d8 f8}
+  \tuplet 3/2 {g8 ees8 c8}
+  
+  \tuplet 3/2 {c8 ees8 g8}
+  \tuplet 3/2 {f8 d8 bes8}
+  \tuplet 3/2 {a8 c8 ees8}
+  \tuplet 3/2 {d8 bes8 g8}
+  \tuplet 3/2 {f8 a8 c8}
+  \tuplet 3/2 {bes8 g8 ees8}
+  \tuplet 3/2 {d8 f8 a8}
+  \tuplet 3/2 {g8 ees8 c8}
+}
+
+CDorianScaleChords = {
+  c8 ees8 g8 bes8
+  d,8 f8 a8 c8
+  ees,8 g8 bes8 d8 
+  f,8 a8 c8 ees8 
+  g,8 bes8 d8 f8
+  a,8 c8 ees8 g8
+  bes,8 d8 f8 a8
+  c,8 ees8 g8 bes8
+  
+  bes8 g8 ees8 c8
+  a'8 f8 d8 bes8
+  g'8 ees8 c8 a8
+  f'8 d8 bes8 g8
+  ees'8 c8 a8 f8
+  d'8 bes8 g8 ees8
+  c'8 a8 f8 d8
+  bes'8 g8 ees8 c8
+  
+  c8 ees8 g8 bes8
+  c8 a8 f8 d8
+  ees8 g8 bes8 d8 
+  ees8 c8 a8 f8
+  g8 bes8 d8 f8
+  g8 ees8 c8 a8
+  bes8 d8 f8 a8
+  bes8 g8 ees8 c8
+  
+  c8 ees8 g8 bes8
+  a8 f8 d8 bes8
+  a8 c8 ees8 g8 
+  f8 d8 bes8 g8
+  f8 a8 c8 ees8
+  d8 bes8 g8 ees8
+  d8 f8 a8 c8
+  bes8 g8 ees8 c8
+}
+
+%{
   Minor Melodic Scale
 %}
 

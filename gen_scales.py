@@ -176,6 +176,34 @@ with open("template_major.ly", "r") as tmp:
     os.chdir("..")
 
 #######################################
+######## Dorian Mode ##########
+#######################################
+
+with open("template_dorian.ly", "r") as tmp:
+    str = tmp.read()
+
+    os.chdir(os.getcwd() + os.sep + "output")
+
+    for key in fifth_circle.keys():
+        app = str.replace("__TITLE_PITCH__", fifth_circle[key]["__TITLE_PITCH__"]) \
+            .replace("__LILY_PITCH__", fifth_circle[key]["__LILY_PITCH__"]) \
+            .replace("__RELATIVE_PITCH__", fifth_circle[key]["__RELATIVE_PITCH__"])
+        filename = key + "_dorian.ly"
+        with open(filename, 'w') as out:
+            out.write(app)
+
+    with open('book.lytex', "a+") as lytex:
+        lytex.write("\\chapter{Dorian Modes}\n")
+        for key in fifth_circle.keys():
+            lytex.write("\\section*{" + fifth_circle[key]["__LATEX_PITCH__"] + " Dorian Mode}\n")
+            lytex.write("\\addcontentsline{toc}{section}{" + fifth_circle[key]["__LATEX_PITCH__"] + " Dorian Mode}\n")
+            lytex.write("\\lilypondfile[quote, noindent]{" + key + "_dorian.ly}\n")
+            lytex.write("\\pagebreak\n")
+        lytex.write("\n\n")
+
+    os.chdir("..")
+
+#######################################
 ######## Melodic Minor Scale ##########
 #######################################
 
