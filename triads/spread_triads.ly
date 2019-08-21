@@ -39,7 +39,22 @@ CTriads = {
   \transpose c f
   \new Staff \relative c {
     \key c \major
-    \CTriads
+    {
+      c'8^\markup{maj} g' e' g, c,4 r
+      c8^\markup{aug} gis' e' gis, c,4 r
+      c8^\markup{min} g' ees' g, c,4 r 
+      c8^\markup{dim} ges' ees' ges, c,4 r
+      
+      e8^\markup{maj 1st inv.} c' g' c, e,4 r
+      e8^\markup{aug 1st inv.} c' gis' c, e,4 r
+      ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
+      ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
+    
+      g,8^\markup{maj 2nd inv.} e' c' e, g,4 r
+      gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
+      g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
+      ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
+    }
     \bar "||"
   }
   \header{
@@ -63,7 +78,22 @@ CTriads = {
   \transpose c ees
   \new Staff \relative c {
     \key c \major
-    \CTriads
+    {
+      c'8^\markup{maj} g' e' g, c,4 r
+      c8^\markup{aug} gis' e' gis, c,4 r
+      c8^\markup{min} g' ees' g, c,4 r 
+      c8^\markup{dim} ges' ees' ges, c,4 r
+      
+      e8^\markup{maj 1st inv.} c' g' c, e,4 r
+      e8^\markup{aug 1st inv.} c' gis' c, e,4 r
+      ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
+      ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
+    
+      g,8^\markup{maj 2nd inv.} e' c' e, g,4 r
+      gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
+      g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
+      ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
+    }
     \bar "||"
   }
   \header{
@@ -87,7 +117,22 @@ CTriads = {
   \transpose c des
   \new Staff \relative c {
     \key c \major
-    \CTriads
+    {
+      c'8^\markup{maj} g' e' g, c,4 r
+      c8^\markup{aug} gis' e' gis, c,4 r
+      c8^\markup{min} g' ees' g, c,4 r 
+      c8^\markup{dim} ges' ees' ges, c,4 r
+      
+      e8^\markup{maj 1st inv.} c' g' c, e,4 r
+      e8^\markup{aug 1st inv.} c' gis' c, e,4 r
+      ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
+      ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
+    
+      g,8^\markup{maj 2nd inv.} e' c' e, g,4 r
+      gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
+      g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
+      ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
+    }
     \bar "||"
   }
   \header{
@@ -99,7 +144,22 @@ CTriads = {
   \transpose c ges
   \new Staff \relative c {
     \key c \major
-    \CTriads
+    {
+      c'8^\markup{maj} g' e' g, c,4 r
+      c8^\markup{aug} gis' e' gis, c,4 r
+      c8^\markup{min} g' ees' g, c,4 r 
+      c8^\markup{dim} ges' ees' ges, c,4 r
+      
+      e,8^\markup{maj 1st inv.} c' g' c, e,4 r
+      e8^\markup{aug 1st inv.} c' gis' c, e,4 r
+      ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
+      ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
+    
+      g8^\markup{maj 2nd inv.} e' c' e, g,4 r
+      gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
+      g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
+      ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
+    }
     \bar "||"
   }
   \header{
