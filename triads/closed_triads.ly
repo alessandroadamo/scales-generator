@@ -11,16 +11,22 @@ CTriads = {
   c8^\markup{aug} e gis e c4 r
   c8^\markup{min} ees g ees c4 r 
   c8^\markup{dim} ees ges ees c4 r
+  c8^\markup{sus2} d g d c4 r
+  c8^\markup{sus4} f g f c4 r
   
   e8^\markup{maj 1st inv.} g c g e4 r
   e8^\markup{aug 1st inv.} gis c gis e4 r
   ees8^\markup{min 1st inv.} g c g ees4 r 
   ees8^\markup{dim 1st inv.} ges c ges ees4 r
+  d8^\markup{sus2 1st inv.} g c g d4 r
+  f8^\markup{sus4 1st inv.} g c g f4 r
 
   g8^\markup{maj 2nd inv.} c e c g4 r
   gis8^\markup{aug aug 2nd inv.} c e c gis4 r
   g8^\markup{min 2nd inv.} c ees c g4 r
   ges8^\markup{dim 2nd inv.} c ees c ges4 r
+  g8^\markup{maj 2nd inv.} c d c g4 r
+  g8^\markup{maj 2nd inv.} c f c g4 r
 }
 
 \score {

@@ -30,6 +30,19 @@ CTriads = {
   ges8 c ees c ges4 r
   \bar "|."
   \break
+  
+  c,8^\markup{sus2} d g d c4 r
+  d8 g c g d4 r
+  g8 c d c g4 r
+  \bar "|."
+  \break
+
+  c,8^\markup{sus4} f g f c4 r
+  f8 g c g f4 r
+  g8 c f c g4 r
+  \bar "|."
+  \break
+
 }
 
 \score {
