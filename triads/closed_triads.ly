@@ -25,8 +25,8 @@ CTriads = {
   gis8^\markup{aug aug 2nd inv.} c e c gis4 r
   g8^\markup{min 2nd inv.} c ees c g4 r
   ges8^\markup{dim 2nd inv.} c ees c ges4 r
-  g8^\markup{maj 2nd inv.} c d c g4 r
-  g8^\markup{maj 2nd inv.} c f c g4 r
+  g8^\markup{sus2 2nd inv.} c d c g4 r
+  g8^\markup{sus4 2nd inv.} c f c g4 r
 }
 
 \score {
