@@ -2,6 +2,7 @@
 
 \header{
   title = \markup { "Closed Triads" }
+  composer = "Alessandro Adamo"
   tagline = ##f
 }
 
