@@ -6,36 +6,88 @@
   tagline = ##f
 }
 
+CTriads = {
+  c'8^\markup{maj} g' e' g, c,4 r
+  e8 c' g' c, e,4 r
+  g,8 e' c' e, g,4 r
+  \bar "|."
+  \break
+      
+  c8^\markup{aug} gis' e' gis, c,4 r
+  e8 c' gis' c, e,4 r
+  gis,8 e' c' e, gis,4 r
+  \bar "|."
+  \break
+      
+  c8 g' ees' g, c,4 r 
+  ees8 c' g' c, ees,4 r 
+  g,8 ees' c' ees, g,4 r
+  \bar "|."
+  \break
+      
+  c8^\markup{dim} ges' ees' ges, c,4 r
+  ees8 c' ges' c, ees,4 r
+  ges,8 ees' c' ees, ges,4 r
+  \bar "|."
+  \break
+  
+  c8^\markup{sus2} g' d' g, c,4 r
+  d8 c' g' c, d,4 r
+  g,8 d' c' d, g,4 r
+  \bar "|."
+  \break
+  
+  c8^\markup{sus4} g' f' g, c,4 r
+  f8 c' g' c, f,4 r
+  g,8 f' c' f, g,4 r
+  \bar "|."
+  \break
+}
+
+CTriadsND = {
+  c'8^\markup{maj} g' e' g, c,4 r
+  e8 c' g' c, e,4 r
+  g8 e' c' e, g,4 r
+  \bar "|."
+  \break
+      
+  c,8^\markup{aug} gis' e' gis, c,4 r
+  e8 c' gis' c, e,4 r
+  gis8 e' c' e, gis,4 r
+  \bar "|."
+  \break
+      
+  c,8 g' ees' g, c,4 r 
+  ees8 c' g' c, ees,4 r 
+  g8 ees' c' ees, g,4 r
+  \bar "|."
+  \break
+      
+  c,8^\markup{dim} ges' ees' ges, c,4 r
+  ees8 c' ges' c, ees,4 r
+  ges8 ees' c' ees, ges,4 r
+  \bar "|."
+  \break
+  
+  c,8^\markup{sus2} g' d' g, c,4 r
+  d8 c' g' c, d,4 r
+  g8 d' c' d, g,4 r
+  \bar "|."
+  \break
+  
+  c,8^\markup{sus4} g' f' g, c,4 r
+  f8 c' g' c, f,4 r
+  g8 f' c' f, g,4 r
+  \bar "|."
+  \break
+}
+
 \score {
   \transpose c c
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g,8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis,8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g,8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges,8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriads
+    \bar "|."
   }
   \header{
     piece = \markup { "C Triads" }
@@ -46,32 +98,8 @@
   \transpose c f
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g,8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis,8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g,8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges,8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriads
+    \bar "|."
   }
   \header{
     piece = \markup { "F Triads" }
@@ -82,32 +110,8 @@
   \transpose c bes,
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c,8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriadsND
+    \bar "|."
   }
   \header{
     piece = \markup { "B" \flat " Triads" }
@@ -118,32 +122,8 @@
   \transpose c ees
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g,8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis,8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g,8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges,8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriads
+    \bar "|."
   }
   \header{
     piece = \markup { "E" \flat " Triads" }
@@ -154,32 +134,8 @@
   \transpose c aes,
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c,8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriadsND
+    \bar "|."
   }
   \header{
     piece = \markup { "A" \flat " Triads" }
@@ -190,32 +146,8 @@
   \transpose c des
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g,8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis,8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g,8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges,8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriads
+    \bar "|."
   }
   \header{
     piece = \markup { "D" \flat " Triads" }
@@ -226,32 +158,8 @@
   \transpose c ges
   \new Staff \relative c {
     \key c \major
-    {
-      c8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c,8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriads
+    \bar "|."
   }
   \header{
     piece = \markup { "G" \flat " Triads" }
@@ -262,32 +170,8 @@
   \transpose c b,
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c,8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriadsND
+    \bar "|."
   }
   \header{
     piece = \markup { "B Triads" }
@@ -298,32 +182,8 @@
   \transpose c e
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g,8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis,8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g,8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges,8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriads
+    \bar "|."
   }
   \header{
     piece = \markup { "E Triads" }
@@ -334,32 +194,8 @@
   \transpose c a,
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g,8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges,8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriadsND
+    \bar "|."
   }
   \header{
     piece = \markup { "A Triads" }
@@ -370,32 +206,8 @@
   \transpose c d
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g,8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis,8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g,8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges,8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriads
+    \bar "|."
   }
   \header{
     piece = \markup { "D Triads" }
@@ -406,32 +218,8 @@
   \transpose c g,
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      e8 c' g' c, e,4 r
-      g8 e' c' e, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{aug} gis' e' gis, c,4 r
-      e8 c' gis' c, e,4 r
-      gis8 e' c' e, gis,4 r
-      \bar "|."
-      \break
-      
-      c,8 g' ees' g, c,4 r 
-      ees8 c' g' c, ees,4 r 
-      g8 ees' c' ees, g,4 r
-      \bar "|."
-      \break
-      
-      c,8^\markup{dim} ges' ees' ges, c,4 r
-      ees8 c' ges' c, ees,4 r
-      ges8 ees' c' ees, ges,4 r
-      \bar "|."
-      \break
-    }
-    \bar "||"
+    \CTriadsND
+    \bar "|."
   }
   \header{
     piece = \markup { "G Triads" }

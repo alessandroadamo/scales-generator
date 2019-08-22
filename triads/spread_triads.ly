@@ -11,16 +11,86 @@ CTriads = {
   c8^\markup{aug} gis' e' gis, c,4 r
   c8^\markup{min} g' ees' g, c,4 r 
   c8^\markup{dim} ges' ees' ges, c,4 r
+  c8^\markup{sus2} g' d' g, c,4 r
+  c8^\markup{sus4} g' f' g, c,4 r
+  \bar "|."
+  \break
   
   e8^\markup{maj 1st inv.} c' g' c, e,4 r
   e8^\markup{aug 1st inv.} c' gis' c, e,4 r
   ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
   ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
-
+  d8^\markup{sus2 1st inv.} c' g' c, d,4 r
+  f8^\markup{sus4 1st inv.} c' g' c, f,4 r
+  \bar "|."
+  \break
+  
   g8^\markup{maj 2nd inv.} e' c' e, g,4 r
   gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
   g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
   ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
+  g8^\markup{sus2 2nd inv.} d' c' d, g,4 r
+  g8^\markup{sus4 2nd inv.} f' c' f, g,4 r
+  \bar "|."
+  \break
+}
+
+CTriadsLower = {
+  c'8^\markup{maj} g' e' g, c,4 r
+  c8^\markup{aug} gis' e' gis, c,4 r
+  c8^\markup{min} g' ees' g, c,4 r 
+  c8^\markup{dim} ges' ees' ges, c,4 r
+  c8^\markup{sus2} g' d' g, c,4 r
+  c8^\markup{sus4} g' f' g, c,4 r
+  \bar "|."
+  \break
+  
+  e,8^\markup{maj 1st inv.} c' g' c, e,4 r
+  e8^\markup{aug 1st inv.} c' gis' c, e,4 r
+  ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
+  ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
+  d8^\markup{sus2 1st inv.} c' g' c, d,4 r
+  f8^\markup{sus4 1st inv.} c' g' c, f,4 r
+  \bar "|."
+  \break
+  
+  g8^\markup{maj 2nd inv.} e' c' e, g,4 r
+  gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
+  g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
+  ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
+  g8^\markup{sus2 2nd inv.} d' c' d, g,4 r
+  g8^\markup{sus4 2nd inv.} f' c' f, g,4 r
+  \bar "|."
+  \break
+}
+
+CTriadsLowerSec = {
+  c'8^\markup{maj} g' e' g, c,4 r
+  c8^\markup{aug} gis' e' gis, c,4 r
+  c8^\markup{min} g' ees' g, c,4 r 
+  c8^\markup{dim} ges' ees' ges, c,4 r
+  c8^\markup{sus2} g' d' g, c,4 r
+  c8^\markup{sus4} g' f' g, c,4 r
+  \bar "|."
+  \break
+  
+  e8^\markup{maj 1st inv.} c' g' c, e,4 r
+  e8^\markup{aug 1st inv.} c' gis' c, e,4 r
+  ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
+  ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
+  d8^\markup{sus2 1st inv.} c' g' c, d,4 r
+  f8^\markup{sus4 1st inv.} c' g' c, f,4 r
+  \bar "|."
+  \break
+  
+  g,8^\markup{maj 2nd inv.} e' c' e, g,4 r
+  gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
+  g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
+  ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
+  g8^\markup{sus2 2nd inv.} d' c' d, g,4 r
+  g8^\markup{sus4 2nd inv.} f' c' f, g,4 r
+  \bar "|."
+  \break
 }
 
 \score {
@@ -28,7 +98,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "C Triads" }
@@ -39,23 +109,8 @@ CTriads = {
   \transpose c f
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      c8^\markup{aug} gis' e' gis, c,4 r
-      c8^\markup{min} g' ees' g, c,4 r 
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      
-      e8^\markup{maj 1st inv.} c' g' c, e,4 r
-      e8^\markup{aug 1st inv.} c' gis' c, e,4 r
-      ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
-      ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
-    
-      g,8^\markup{maj 2nd inv.} e' c' e, g,4 r
-      gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
-      g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
-      ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
-    }
-    \bar "||"
+    \CTriadsLower
+    \bar "|."
   }
   \header{
     piece = \markup { "F Triads" }
@@ -67,7 +122,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "B" \flat " Triads" }
@@ -78,23 +133,8 @@ CTriads = {
   \transpose c ees
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      c8^\markup{aug} gis' e' gis, c,4 r
-      c8^\markup{min} g' ees' g, c,4 r 
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      
-      e8^\markup{maj 1st inv.} c' g' c, e,4 r
-      e8^\markup{aug 1st inv.} c' gis' c, e,4 r
-      ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
-      ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
-    
-      g,8^\markup{maj 2nd inv.} e' c' e, g,4 r
-      gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
-      g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
-      ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
-    }
-    \bar "||"
+    \CTriadsLower
+    \bar "|."
   }
   \header{
     piece = \markup { "E" \flat " Triads" }
@@ -106,7 +146,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "A" \flat " Triads" }
@@ -117,23 +157,8 @@ CTriads = {
   \transpose c des
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      c8^\markup{aug} gis' e' gis, c,4 r
-      c8^\markup{min} g' ees' g, c,4 r 
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      
-      e8^\markup{maj 1st inv.} c' g' c, e,4 r
-      e8^\markup{aug 1st inv.} c' gis' c, e,4 r
-      ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
-      ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
-    
-      g,8^\markup{maj 2nd inv.} e' c' e, g,4 r
-      gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
-      g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
-      ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
-    }
-    \bar "||"
+    \CTriadsLowerSec
+    \bar "|."
   }
   \header{
     piece = \markup { "D" \flat " Triads" }
@@ -144,23 +169,8 @@ CTriads = {
   \transpose c ges
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      c8^\markup{aug} gis' e' gis, c,4 r
-      c8^\markup{min} g' ees' g, c,4 r 
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      
-      e,8^\markup{maj 1st inv.} c' g' c, e,4 r
-      e8^\markup{aug 1st inv.} c' gis' c, e,4 r
-      ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
-      ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
-    
-      g8^\markup{maj 2nd inv.} e' c' e, g,4 r
-      gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
-      g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
-      ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
-    }
-    \bar "||"
+    \CTriadsLower	
+    \bar "|."
   }
   \header{
     piece = \markup { "G" \flat " Triads" }
@@ -172,7 +182,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "B Triads" }
@@ -183,8 +193,8 @@ CTriads = {
   \transpose c e
   \new Staff \relative c {
     \key c \major
-    \CTriads
-    \bar "||"
+    \CTriadsLower
+    \bar "|."
   }
   \header{
     piece = \markup { "E Triads" }
@@ -196,7 +206,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "A Triads" }
@@ -207,23 +217,8 @@ CTriads = {
   \transpose c d
   \new Staff \relative c {
     \key c \major
-    {
-      c'8^\markup{maj} g' e' g, c,4 r
-      c8^\markup{aug} gis' e' gis, c,4 r
-      c8^\markup{min} g' ees' g, c,4 r 
-      c8^\markup{dim} ges' ees' ges, c,4 r
-      
-      e8^\markup{maj 1st inv.} c' g' c, e,4 r
-      e8^\markup{aug 1st inv.} c' gis' c, e,4 r
-      ees8^\markup{min 1st inv.} c' g' c, ees,4 r 
-      ees8^\markup{dim 1st inv.} c' ges' c, ees,4 r
-    
-      g,8^\markup{maj 2nd inv.} e' c' e, g,4 r
-      gis8^\markup{aug aug 2nd inv.} e' c' e, gis,4 r
-      g8^\markup{min 2nd inv.} ees' c' ees, g,4 r
-      ges8^\markup{dim 2nd inv.} ees' c' ees, ges,4 r
-    }
-    \bar "||"
+    \CTriadsLowerSec
+    \bar "|."
   }
   \header{
     piece = \markup { "D Triads" }
@@ -235,7 +230,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "G Triads" }
