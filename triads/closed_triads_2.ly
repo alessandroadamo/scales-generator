@@ -50,7 +50,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "C Triads" }
@@ -62,7 +62,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "F Triads" }
@@ -74,7 +74,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "B" \flat " Triads" }
@@ -86,7 +86,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "E" \flat " Triads" }
@@ -98,7 +98,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "A" \flat " Triads" }
@@ -110,7 +110,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "D" \flat " Triads" }
@@ -122,7 +122,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "G" \flat " Triads" }
@@ -134,7 +134,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "B Triads" }
@@ -146,7 +146,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "E Triads" }
@@ -158,7 +158,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "A Triads" }
@@ -170,7 +170,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "D Triads" }
@@ -182,7 +182,7 @@ CTriads = {
   \new Staff \relative c {
     \key c \major
     \CTriads
-    \bar "||"
+    \bar "|."
   }
   \header{
     piece = \markup { "G Triads" }
