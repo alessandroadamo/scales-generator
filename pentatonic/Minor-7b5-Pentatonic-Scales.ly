@@ -13,7 +13,7 @@
 }
 
 CMinorPentatonicScale = {
-  c'4 ees' f' ges' bes' c'' ees'' f'' gges'' bes'' r2
+  c'4 ees' f' ges' bes' c'' ees'' f'' ges'' bes'' r2
   \bar "|."
   \break
 }
